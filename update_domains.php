@@ -9,7 +9,7 @@ if ($json_data === FALSE) {
 
 $remote_domains = json_decode($json_data, true);
 
-$site_url = 'https://yopmail.com/it/domain?d=all'; // Sostituisci con l'URL reale
+$site_url = 'https://yopmail.com/it/domain?d=all';
 $html = file_get_contents($site_url);
 
 if ($html === FALSE) {
